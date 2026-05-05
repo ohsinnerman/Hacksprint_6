@@ -59,31 +59,7 @@ const PrizePool = () => {
           <p className="font-orbitron text-mutedText text-xl tracking-widest mt-4">WORTH EXCITING PRIZES & SWAGS!</p>
         </div>
 
-        {/* Prize Breakdown */}
-        <div className="mt-24 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <PrizeCard 
-            icon={FaTrophy}
-            title="Winner (Per Domain)"
-            amount="12,500"
-            color="orange"
-          />
-          <PrizeCard 
-            icon={FaMedal}
-            title="Runner Up (Per Domain)"
-            amount="7,500"
-            color="blue"
-          />
-        </div>
 
-        <div className="mt-16 text-center">
-          <motion.p 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="font-orbitron text-xs text-white/40 tracking-[0.3em] uppercase"
-          >
-            * Prizes awarded in each of the 3 specialized domains
-          </motion.p>
-        </div>
       </div>
     </section>
   );
