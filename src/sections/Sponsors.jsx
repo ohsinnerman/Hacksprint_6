@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const Sponsors = () => {
   const sponsors = [
     { name: "PESCE", logo: "/pesce_logo.png" },
-    { name: "IEEE Bangalore Section", logo: "https://upload.wikimedia.org/wikipedia/commons/2/21/IEEE_logo.svg" },
+    { name: "IEEE Bangalore Section", logo: "/ieeebeng.jpeg" },
     { name: "IEEE PESCE", logo: "/ieee_pesce_logo.png" },
   ];
 
