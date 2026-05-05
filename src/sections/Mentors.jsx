@@ -33,15 +33,16 @@ const MentorCard = ({ name, role, expertise, image }) => (
 );
 
 const Mentors = () => {
-  const mentors = [
-    { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
-    { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
-    { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
-    { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
-  ];
+  // const mentors = [
+  //   { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
+  //   { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
+  //   { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
+  //   { name: "", role: "Bangalore YP Section", expertise: "Expert Mentor & Judge", image: "" },
+  // ];
 
   return (
-    <section id="judges" className="py-32 bg-background relative overflow-hidden">
+    <>
+    {/* <section id="judges" className="py-32 bg-background relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <motion.span 
@@ -66,7 +67,8 @@ const Mentors = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section> */}
+    </>
   );
 };
 

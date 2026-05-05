@@ -2,34 +2,35 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const Committee = () => {
-  const categories = [
-    {
-      title: "ORGANIZING COMMITTEE",
-      members: [
-        { name: "Dr. R. M. Mahalinge Gowda", role: "Principal, PESCE", image: "/committee/principal.png" },
-        { name: "Dr. M. C. Padma", role: "HOD, Dept of CSE", image: "/committee/hod.png" },
-      ]
-    },
-    {
-      title: "FACULTY COORDINATORS",
-      members: [
-        { name: "Prof. Puneeth P", role: "Assistant Professor", image: "/committee/faculty1.png" },
-        { name: "Prof. Shruthi G", role: "Assistant Professor", image: "/committee/faculty2.png" },
-      ]
-    },
-    {
-      title: "STUDENT LEADS",
-      members: [
-        { name: "Student Name 1", role: "Lead Organizer", image: "/committee/student1.png" },
-        { name: "Student Name 2", role: "Technical Lead", image: "/committee/student2.png" },
-      ]
-    }
-  ];
+  // const categories = [
+  //   {
+  //     title: "ORGANIZING COMMITTEE",
+  //     members: [
+  //       { name: "Dr. R. M. Mahalinge Gowda", role: "Principal, PESCE", image: "/committee/principal.png" },
+  //       { name: "Dr. M. C. Padma", role: "HOD, Dept of CSE", image: "/committee/hod.png" },
+  //     ]
+  //   },
+  //   {
+  //     title: "FACULTY COORDINATORS",
+  //     members: [
+  //       { name: "Prof. Puneeth P", role: "Assistant Professor", image: "/committee/faculty1.png" },
+  //       { name: "Prof. Shruthi G", role: "Assistant Professor", image: "/committee/faculty2.png" },
+  //     ]
+  //   },
+  //   {
+  //     title: "STUDENT LEADS",
+  //     members: [
+  //       { name: "Student Name 1", role: "Lead Organizer", image: "/committee/student1.png" },
+  //       { name: "Student Name 2", role: "Technical Lead", image: "/committee/student2.png" },
+  //     ]
+  //   }
+  // ];
 
-  const allMembers = categories.flatMap(cat => cat.members);
+  // const allMembers = categories.flatMap(cat => cat.members);
 
   return (
-    <section id="committee" className="py-24 relative bg-background overflow-hidden border-t border-white/5">
+    <>
+    {/* <section id="committee" className="py-24 relative bg-background overflow-hidden border-t border-white/5">
       <div className="container mx-auto px-6 mb-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,10 +45,8 @@ const Committee = () => {
         </motion.div>
       </div>
 
-      {/* Marquee Wrapper */}
       <div className="relative flex overflow-hidden py-10">
         <div className="animate-committee-marquee flex items-center gap-8 whitespace-nowrap px-4">
-          {/* Repeat multiple times to ensure full width coverage */}
           {[...allMembers, ...allMembers, ...allMembers].map((member, i) => (
             <div 
               key={i} 
@@ -80,7 +79,8 @@ const Committee = () => {
           animation-play-state: paused;
         }
       `}</style>
-    </section>
+    </section> */}
+    </>
   );
 };
 

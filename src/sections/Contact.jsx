@@ -6,8 +6,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-32 bg-background relative">
       <div className="container mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-20">
-          {/* Left Side: Info */}
+        <div className="max-w-4xl mx-auto">
           <div>
             <motion.span 
               initial={{ opacity: 0 }}
@@ -55,55 +54,6 @@ const Contact = () => {
 
 
             </div>
-          </div>
-
-          {/* Right Side: Form */}
-          <div className="glass-panel p-10 relative">
-            <div className="absolute top-0 right-0 p-6 font-orbitron text-[10px] text-white/10">MESSAGE_PORTAL_V1.0</div>
-            
-            <form className="space-y-6">
-              <div className="relative group">
-                <FaUser className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-neonBlue transition-colors" />
-                <input 
-                  type="text" 
-                  placeholder="NAME" 
-                  className="w-full bg-background/50 border border-white/10 rounded p-4 pl-12 font-orbitron text-xs tracking-widest text-white outline-none focus:border-neonBlue transition-all"
-                />
-              </div>
-
-              <div className="relative group">
-                <FaEnvelope className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-neonBlue transition-colors" />
-                <input 
-                  type="email" 
-                  placeholder="EMAIL" 
-                  className="w-full bg-background/50 border border-white/10 rounded p-4 pl-12 font-orbitron text-xs tracking-widest text-white outline-none focus:border-neonBlue transition-all"
-                />
-              </div>
-
-              <div className="relative group">
-                <FaTag className="absolute left-4 top-1/2 -translate-y-1/2 text-white/20 group-focus-within:text-neonBlue transition-colors" />
-                <input 
-                  type="text" 
-                  placeholder="TEAM NAME (OPTIONAL)" 
-                  className="w-full bg-background/50 border border-white/10 rounded p-4 pl-12 font-orbitron text-xs tracking-widest text-white outline-none focus:border-neonBlue transition-all"
-                />
-              </div>
-
-              <div className="relative group">
-                <FaComment className="absolute left-4 top-6 text-white/20 group-focus-within:text-neonBlue transition-colors" />
-                <textarea 
-                  rows="5" 
-                  placeholder="YOUR QUERY" 
-                  className="w-full bg-background/50 border border-white/10 rounded p-4 pl-12 font-orbitron text-xs tracking-widest text-white outline-none focus:border-neonBlue transition-all"
-                ></textarea>
-              </div>
-
-              <button className="w-full py-5 bg-neonBlue text-white font-orbitron font-bold tracking-[0.3em] rounded group flex items-center justify-center gap-4 hover:scale-[1.02] active:scale-[0.98] transition-all glow-blue overflow-hidden relative">
-                <span className="relative z-10">SEND MESSAGE</span>
-                <FaPaperPlane className="relative z-10 group-hover:translate-x-2 group-hover:-translate-y-2 transition-transform" />
-                <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-              </button>
-            </form>
           </div>
         </div>
       </div>
