@@ -137,17 +137,17 @@ const Hero = () => {
             <div className="absolute w-[80%] h-[80%] border-t border-b border-orangeAccent/20 rounded-full animate-reverse-spin" />
           </div>
 
-          {/* Banner Image at Top */}
+          {/* Banner Image at Top - Desktop Only */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="absolute top-0 left-0 right-0 z-20 flex justify-center pt-2 px-2"
+            className="hidden md:flex absolute top-0 left-0 right-0 z-20 justify-center pt-2 px-2"
           >
             <img 
               src="/bannerr.png" 
               alt="PESCE Banner" 
-              className="h-8 sm:h-10 md:h-14 lg:h-16 w-auto opacity-90 max-w-full object-contain"
+              className="h-14 lg:h-16 w-auto opacity-90 max-w-full object-contain"
             />
           </motion.div>
 
