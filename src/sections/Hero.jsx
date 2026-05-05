@@ -113,8 +113,13 @@ const Hero = () => {
               <span className="relative z-10">REGISTER NOW</span>
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
             </a>
-            <a href="#domains" className="px-10 py-4 inline-flex items-center justify-center bg-transparent border-2 border-neonBlue text-neonBlue font-orbitron font-bold tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue">
-              EXPLORE DOMAINS
+            <a 
+              href="https://drive.google.com/drive/folders/19cNjU_vME0jLjCXxGqyae3dWaPCpbAd6?usp=sharing" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-10 py-4 inline-flex items-center justify-center bg-transparent border-2 border-neonBlue text-neonBlue font-orbitron font-bold tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue"
+            >
+              RULE BOOK
             </a>
           </motion.div>
         </motion.div>
