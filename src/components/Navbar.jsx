@@ -17,13 +17,13 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Domains', href: '#domains' },
     { name: 'Timeline', href: '#timeline' },
-    { name: 'Committee', href: '#committee' },
+    // { name: 'Committee', href: '#committee' }, // Commented out section
     { name: 'Sponsors', href: '#sponsors' },
     { 
       name: 'Archives', 
       href: '#archives',
       subLinks: [
-        { name: 'Problem Statements', href: '#problem-statements' },
+        // { name: 'Problem Statements', href: '#problem-statements' }, // Commented out section
         { name: 'Photos', href: '#photos' }
       ]
     },
