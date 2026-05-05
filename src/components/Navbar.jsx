@@ -40,10 +40,10 @@ const Navbar = () => {
         isScrolled ? 'py-2 backdrop-blur-xl border-b border-white/10' : 'py-6'
       }`}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 flex items-center justify-between">
         {/* Left: Logo */}
-        <div className="flex items-center gap-4">
-          <div className="text-2xl font-orbitron font-black tracking-tighter flex items-center gap-2">
+        <div className="flex items-center gap-2 sm:gap-4">
+          <div className="text-lg sm:text-2xl font-orbitron font-black tracking-tighter flex items-center gap-1 sm:gap-2">
             <span className="text-orangeAccent">HACK</span>
             <span className="text-neonBlue">SPRINT</span>
             <span className="text-whiteText ml-1">6.0</span>
@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <div className="flex items-center gap-3 text-white/60">
 
 
@@ -96,7 +96,7 @@ const Navbar = () => {
             href="https://docs.google.com/forms/d/e/1FAIpQLSfFqr-ZQb8Ib2t7UvzclOBZCleTzV43jqR3EcDFq9u46SpSHw/viewform"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-2 bg-transparent border border-neonBlue text-neonBlue font-orbitron text-sm tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue overflow-hidden relative group block"
+            className="px-3 sm:px-6 py-1.5 sm:py-2 bg-transparent border border-neonBlue text-neonBlue font-orbitron text-xs sm:text-sm tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue overflow-hidden relative group block whitespace-nowrap"
           >
             <span className="relative z-10">REGISTER</span>
             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />

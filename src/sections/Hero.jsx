@@ -34,7 +34,19 @@ const Hero = () => {
       <div className="absolute inset-0 bg-grid opacity-20" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neonBlue/10 rounded-full blur-[120px] pointer-events-none" />
 
-
+      {/* Banner Image - Mobile Only (Above Content) */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="md:hidden w-full flex justify-center pt-2 px-2 mb-6 relative z-10"
+      >
+        <img 
+          src="/bannerr.png" 
+          alt="PESCE Banner" 
+          className="h-10 sm:h-12 w-auto opacity-90 max-w-full object-contain"
+        />
+      </motion.div>
 
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10 flex-grow">
         {/* Left Content */}
@@ -123,11 +135,27 @@ const Hero = () => {
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
             <div className="w-full h-full max-w-[450px] max-h-[450px] border border-white/5 rounded-full animate-spin-slow" />
             <div className="absolute w-[80%] h-[80%] border-t border-b border-orangeAccent/20 rounded-full animate-reverse-spin" />
-            <div className="absolute top-0 right-0 p-4 font-orbitron text-[10px] text-neonOrange/40 flex flex-col items-end">
-              <span>SCAN_ID: HS_6.0_SYSTEM_READY</span>
-              <span>SYNC_STATUS: 100%</span>
-              <span>CORE_TEMP: OPTIMAL</span>
-            </div>
+          </div>
+
+          {/* Banner Image at Top */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="absolute top-0 left-0 right-0 z-20 flex justify-center pt-2 px-2"
+          >
+            <img 
+              src="/bannerr.png" 
+              alt="PESCE Banner" 
+              className="h-8 sm:h-10 md:h-14 lg:h-16 w-auto opacity-90 max-w-full object-contain"
+            />
+          </motion.div>
+
+          {/* System Status Text - Moved to Bottom */}
+          <div className="absolute bottom-0 right-0 p-4 font-orbitron text-[10px] text-neonOrange/40 flex flex-col items-end pointer-events-none">
+            <span>SCAN_ID: HS_6.0_SYSTEM_READY</span>
+            <span>SYNC_STATUS: 100%</span>
+            <span>CORE_TEMP: OPTIMAL</span>
           </div>
         </div>
       </div>
