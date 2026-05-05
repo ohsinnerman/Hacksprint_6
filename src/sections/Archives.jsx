@@ -39,6 +39,9 @@ const Archives = () => {
           <h2 className="font-bebas text-8xl md:text-9xl text-whiteText tracking-tight">
             THE <span className="text-glow-orange text-orangeAccent">ARCHIVES</span>
           </h2>
+          <p className="font-orbitron text-mutedText text-sm md:text-base tracking-widest mt-4">
+            Hacksprint 5.0 | 16-17 May 2025
+          </p>
         </motion.div>
       </div>
 
