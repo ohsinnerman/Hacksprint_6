@@ -125,7 +125,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Content: 3D Scene */}
-        <div className="h-[500px] md:h-[700px] w-full relative">
+        <div className="h-[500px] md:h-[700px] w-full relative pointer-events-none md:pointer-events-auto">
           <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
             <ambientLight intensity={0.5} />
             <pointLight position={[10, 10, 10]} intensity={1} color="#0066FF" />
