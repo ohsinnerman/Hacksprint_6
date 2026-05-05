@@ -15,13 +15,7 @@ const DomainCard = ({ icon: Icon, title, description, color, accent }) => (
     </div>
 
     <h3 className="font-orbitron text-2xl font-black text-whiteText mb-4 tracking-tighter uppercase">{title}</h3>
-    <p className="text-mutedText font-inter leading-relaxed mb-6">{description}</p>
-
-    <div className="mt-auto pt-6 w-full border-t border-white/5 flex items-center justify-center gap-2 text-xs font-orbitron text-white/40 tracking-[0.2em]">
-      <span>EXPLORE</span>
-      <div className={`w-2 h-2 rounded-full bg-${color} animate-pulse`} />
-      <span>DOMAINS</span>
-    </div>
+    <p className="text-mutedText font-inter leading-relaxed">{description}</p>
 
     {/* Hover Glow */}
     <div className={`absolute inset-0 bg-gradient-to-br from-${color}/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity`} />

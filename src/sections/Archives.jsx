@@ -82,7 +82,7 @@ const Archives = () => {
       </div>
 
       {/* Problem Statements */}
-      <div id="problem-statements" className="container mx-auto px-6">
+      {/* <div id="problem-statements" className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <h3 className="font-orbitron text-whiteText text-xl font-bold flex items-center gap-4">
             <span className="w-12 h-[2px] bg-neonBlue" />
@@ -117,7 +117,7 @@ const Archives = () => {
             </motion.div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Lightbox Modal */}
       <AnimatePresence>
