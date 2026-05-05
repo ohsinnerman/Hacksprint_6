@@ -48,24 +48,24 @@ const Hero = () => {
         />
       </motion.div>
 
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10 flex-grow">
+      <div className="container mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10 flex-grow">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="flex flex-col gap-6"
+          className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-0"
         >
           <div className="flex flex-col">
             <motion.h2
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
-              className="font-orbitron text-orangeAccent tracking-[0.5em] text-sm md:text-base font-bold mb-2"
+              className="font-orbitron text-orangeAccent tracking-[0.2em] sm:tracking-[0.5em] text-xs sm:text-sm md:text-base font-bold mb-2 break-words"
             >
               CODE . CREATE . CONQUER
             </motion.h2>
-            <h1 className="font-bebas text-8xl md:text-[10rem] leading-none tracking-tighter text-whiteText relative">
+            <h1 className="font-bebas text-[4rem] min-[400px]:text-[5rem] sm:text-7xl md:text-[8rem] lg:text-[10rem] leading-none tracking-tighter text-whiteText relative">
               <span className="block overflow-hidden">
                 <motion.span
                   initial={{ y: "100%" }}
@@ -76,7 +76,7 @@ const Hero = () => {
                   HACKSPRINT
                 </motion.span>
               </span>
-              <span className="block overflow-hidden mt-[-20px]">
+              <span className="block overflow-hidden mt-[-10px] sm:mt-[-20px]">
                 <motion.span
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -93,7 +93,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="text-mutedText font-orbitron max-w-lg text-lg leading-relaxed border-l-2 border-orangeAccent pl-6"
+            className="text-mutedText font-orbitron max-w-lg text-sm sm:text-lg leading-relaxed border-l-2 border-orangeAccent pl-4 sm:pl-6"
           >
             Join the most elite futuristic hackathon organized by P.E.S. College of Engineering in collaboration with IEEE PESCE SBC & Section partners.
           </motion.p>
@@ -102,13 +102,13 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2 }}
-            className="flex flex-wrap gap-6 mt-8"
+            className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 mt-4 sm:mt-8"
           >
             <a
               href="https://docs.google.com/forms/d/e/1FAIpQLSfFqr-ZQb8Ib2t7UvzclOBZCleTzV43jqR3EcDFq9u46SpSHw/viewform"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 bg-orangeAccent text-white font-orbitron font-bold tracking-widest rounded-sm hover:scale-105 transition-all duration-300 glow-orange group relative overflow-hidden block text-center"
+              className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-orangeAccent text-white font-orbitron font-bold tracking-widest rounded-sm hover:scale-105 transition-all duration-300 glow-orange group relative overflow-hidden text-center text-sm sm:text-base"
             >
               <span className="relative z-10">REGISTER NOW</span>
               <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
@@ -117,7 +117,7 @@ const Hero = () => {
               href="https://drive.google.com/drive/folders/19cNjU_vME0jLjCXxGqyae3dWaPCpbAd6?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
-              className="px-10 py-4 inline-flex items-center justify-center bg-transparent border-2 border-neonBlue text-neonBlue font-orbitron font-bold tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue"
+              className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 inline-flex items-center justify-center bg-transparent border-2 border-neonBlue text-neonBlue font-orbitron font-bold tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue text-sm sm:text-base"
             >
               RULE BOOK
             </a>
@@ -125,7 +125,7 @@ const Hero = () => {
         </motion.div>
 
         {/* Right Content: 3D Scene */}
-        <div className="h-[500px] md:h-[700px] w-full relative pointer-events-none md:pointer-events-auto">
+        <div className="h-[350px] sm:h-[450px] md:h-[700px] w-full relative pointer-events-none md:pointer-events-auto mt-8 md:mt-0">
           <Canvas 
             camera={{ position: [0, 0, 8], fov: 45 }}
             style={{ pointerEvents: 'none' }}
@@ -140,8 +140,8 @@ const Hero = () => {
 
           {/* Overlay Graphics */}
           <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-            <div className="w-full h-full max-w-[450px] max-h-[450px] border border-white/5 rounded-full animate-spin-slow" />
-            <div className="absolute w-[80%] h-[80%] border-t border-b border-orangeAccent/20 rounded-full animate-reverse-spin" />
+            <div className="w-[80%] h-[80%] max-w-[450px] max-h-[450px] border border-white/5 rounded-full animate-spin-slow" />
+            <div className="absolute w-[60%] h-[60%] border-t border-b border-orangeAccent/20 rounded-full animate-reverse-spin" />
           </div>
 
           {/* Banner Image at Top - Desktop Only */}
@@ -159,7 +159,7 @@ const Hero = () => {
           </motion.div>
 
           {/* System Status Text - Moved to Bottom */}
-          <div className="absolute bottom-0 right-0 p-4 font-orbitron text-[10px] text-neonOrange/40 flex flex-col items-end pointer-events-none">
+          <div className="absolute bottom-0 right-0 p-2 sm:p-4 font-orbitron text-[8px] sm:text-[10px] text-neonOrange/40 flex flex-col items-end pointer-events-none">
             <span>SCAN_ID: HS_6.0_SYSTEM_READY</span>
             <span>SYNC_STATUS: 100%</span>
             <span>CORE_TEMP: OPTIMAL</span>
