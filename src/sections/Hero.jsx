@@ -83,7 +83,7 @@ const Hero = () => {
             transition={{ delay: 1 }}
             className="text-mutedText font-orbitron max-w-lg text-lg leading-relaxed border-l-2 border-orangeAccent pl-6"
           >
-            Join the most elite futuristic hackathon organized by P.E.S. College of Engineering in collaboration with IEEE PES SBC & Section partners.
+            Join the most elite futuristic hackathon organized by P.E.S. College of Engineering in collaboration with IEEE PESCE SBC & Section partners.
           </motion.p>
 
           <motion.div

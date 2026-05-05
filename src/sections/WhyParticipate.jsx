@@ -68,7 +68,7 @@ const WhyParticipate = () => {
             size="md:col-span-1 md:row-span-2"
             icon={FaCertificate}
             title="IEEE Certification"
-            description="Boost your resume with globally recognized certificates backed by IEEE PES SBC."
+            description="Boost your resume with globally recognized certificates backed by IEEE PESCE SBC."
             color="blue"
           />
           <BentoCard 
