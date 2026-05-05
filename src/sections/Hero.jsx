@@ -126,21 +126,16 @@ const Hero = () => {
 
         {/* Right Content: 3D Scene */}
         <div className="h-[500px] md:h-[700px] w-full relative pointer-events-none md:pointer-events-auto">
-          <Canvas camera={{ position: [0, 0, 8], fov: 45 }}>
+          <Canvas 
+            camera={{ position: [0, 0, 8], fov: 45 }}
+            style={{ pointerEvents: 'none' }}
+          >
             <ambientLight intensity={0.5} />
             <pointLight position={[10, 10, 10]} intensity={1} color="#0066FF" />
             <pointLight position={[-10, -10, -10]} intensity={0.5} color="#FF7A00" />
             <Float speed={2} rotationIntensity={1} floatIntensity={1}>
               <WireframeSphere />
             </Float>
-            <OrbitControls 
-              enableZoom={false} 
-              autoRotate 
-              autoRotateSpeed={0.5}
-              enabled={window.innerWidth >= 768}
-              enablePan={false}
-              enableRotate={window.innerWidth >= 768}
-            />
           </Canvas>
 
           {/* Overlay Graphics */}
