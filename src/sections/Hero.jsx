@@ -128,7 +128,14 @@ const Hero = () => {
             <Float speed={2} rotationIntensity={1} floatIntensity={1}>
               <WireframeSphere />
             </Float>
-            <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5} />
+            <OrbitControls 
+              enableZoom={false} 
+              autoRotate 
+              autoRotateSpeed={0.5}
+              enabled={window.innerWidth >= 768}
+              enablePan={false}
+              enableRotate={window.innerWidth >= 768}
+            />
           </Canvas>
 
           {/* Overlay Graphics */}
