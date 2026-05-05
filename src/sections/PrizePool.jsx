@@ -58,8 +58,6 @@ const PrizePool = () => {
           </motion.div>
           <p className="font-orbitron text-mutedText text-xl tracking-widest mt-4">WORTH EXCITING PRIZES & SWAGS!</p>
         </div>
-
-
       </div>
     </section>
   );

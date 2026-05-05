@@ -101,7 +101,7 @@ const Archives = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02 }}
-              className="glass-panel p-8 flex items-center justify-between group cursor-pointer border-l-4 border-l-transparent hover:border-l-neonBlue transition-all duration-300"
+              className="glass-panel p-8 flex items-center group cursor-pointer border-l-4 border-l-transparent hover:border-l-neonBlue transition-all duration-300"
             >
               <div className="flex items-center gap-8">
                 <div className="text-center">
@@ -113,11 +113,6 @@ const Archives = () => {
                   <span className="text-white/40 font-orbitron text-[10px] tracking-widest block mb-1 uppercase">{ps.category}</span>
                   <h4 className="text-whiteText font-orbitron text-sm font-bold group-hover:text-neonBlue transition-colors">{ps.title}</h4>
                 </div>
-              </div>
-              <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-neonBlue group-hover:border-neonBlue transition-all duration-300 shadow-xl">
-                <svg className="w-6 h-6 text-white/40 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
               </div>
             </motion.div>
           ))}

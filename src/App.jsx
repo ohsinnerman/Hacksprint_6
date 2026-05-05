@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import CustomCursor from './components/CustomCursor';
 import Hero from './sections/Hero';
 import About from './sections/About';
-import PrizePool from './sections/PrizePool';
 import Domains from './sections/Domains';
 import WhyParticipate from './sections/WhyParticipate';
 import Timeline from './sections/Timeline';
@@ -63,7 +62,6 @@ function App() {
       <Banner />
       <Sponsors />
       <About />
-      <PrizePool />
       <Domains />
       <WhyParticipate />
       <Timeline />

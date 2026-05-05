@@ -20,11 +20,7 @@ const ChallengeCard = ({ title, icon: Icon, difficulty, description }) => (
     </div>
     
     <h3 className="font-orbitron text-xl font-bold text-whiteText mb-4 uppercase tracking-tighter">{title}</h3>
-    <p className="text-sm text-mutedText leading-relaxed mb-6 flex-grow">{description}</p>
-    
-    <button className="w-full py-3 bg-neonBlue/10 hover:bg-neonBlue/20 border border-neonBlue/30 text-neonBlue font-orbitron text-xs tracking-[0.2em] transition-all">
-      VIEW CHALLENGE_DOC
-    </button>
+    <p className="text-sm text-mutedText leading-relaxed flex-grow">{description}</p>
     
     {/* Background Grid Scan */}
     <div className="absolute inset-0 bg-cyber-grid opacity-5 pointer-events-none group-hover:opacity-10 transition-opacity" />
