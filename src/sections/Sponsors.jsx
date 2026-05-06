@@ -12,21 +12,21 @@ const Sponsors = () => {
   return (
     <section id="sponsors" className="py-20 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-5 pointer-events-none" />
-      
+
       <div className="container mx-auto px-6 mb-12 text-center">
-        <motion.span 
+        <motion.span
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="font-orbitron text-orangeAccent tracking-[0.5em] text-sm font-bold uppercase mb-4 block"
         >
           SUPPORTED BY
         </motion.span>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           className="font-bebas text-8xl md:text-9xl text-whiteText leading-none"
         >
-          OUR <span className="text-glow-blue text-neonBlue">SPONSORS</span>
+          Partners & <span className="text-glow-blue text-neonBlue">SPONSORS</span>
         </motion.h2>
       </div>
 
@@ -36,10 +36,10 @@ const Sponsors = () => {
           {/* Repeat multiple times to ensure full width coverage */}
           {[...sponsors, ...sponsors, ...sponsors, ...sponsors, ...sponsors].map((s, i) => (
             <div key={i} className="flex flex-col items-center justify-center transition-all duration-500 hover:scale-110 cursor-pointer">
-              <img 
-                src={s.logo} 
-                alt={s.name} 
-                className={`h-16 md:h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-all`} 
+              <img
+                src={s.logo}
+                alt={s.name}
+                className={`h-16 md:h-24 w-auto object-contain opacity-90 hover:opacity-100 transition-all`}
               />
               <span className="font-orbitron text-xs md:text-sm text-white/40 mt-6 tracking-[0.5em] font-bold">{s.name.toUpperCase()}</span>
             </div>
