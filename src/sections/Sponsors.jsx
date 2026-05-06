@@ -6,6 +6,7 @@ const Sponsors = () => {
     { name: "PESCE", logo: "/pesce_logo.png" },
     { name: "IEEE Bangalore Section", logo: "/ieeebeng.jpeg" },
     { name: "IEEE PESCE", logo: "/ieee_pesce_logo.png" },
+    { name: "IEEE YP", logo: "/ieee_yp.png" },
   ];
 
   return (
