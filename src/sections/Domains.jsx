@@ -82,16 +82,6 @@ const Domains = () => {
             accent="neonBlue"
           />
         </div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="mt-16 glass-panel p-6 flex items-center justify-center gap-8 border-white/5"
-        >
-          <span className="font-orbitron text-[10px] text-mutedText tracking-widest">WANT TO PROPOSE A DIFFERENT TRACK?</span>
-          <a href="#contact" className="text-neonBlue font-orbitron text-xs font-bold hover:underline">CONTACT COORDINATORS</a>
-        </motion.div>
       </div>
     </section>
   );
