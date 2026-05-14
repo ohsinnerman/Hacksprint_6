@@ -89,38 +89,43 @@ const Hero = () => {
             </h1>
           </div>
 
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-            className="text-mutedText font-orbitron max-w-lg text-sm sm:text-lg leading-relaxed border-l-2 border-orangeAccent pl-4 sm:pl-6"
-          >
-            Join the most elite futuristic hackathon organized by P.E.S. College of Engineering in collaboration with IEEE PESCE SBC & Section partners.
-          </motion.p>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2 }}
-            className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 mt-4 sm:mt-8"
+            transition={{ delay: 1 }}
+            className="w-full max-w-lg mt-6"
           >
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfFqr-ZQb8Ib2t7UvzclOBZCleTzV43jqR3EcDFq9u46SpSHw/viewform"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 bg-orangeAccent text-white font-orbitron font-bold tracking-widest rounded-sm hover:scale-105 transition-all duration-300 glow-orange group relative overflow-hidden text-center text-sm sm:text-base"
-            >
-              <span className="relative z-10">REGISTER NOW</span>
-              <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
-            </a>
-            <a 
-              href="https://drive.google.com/drive/folders/19cNjU_vME0jLjCXxGqyae3dWaPCpbAd6?usp=sharing" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 inline-flex items-center justify-center bg-transparent border-2 border-neonBlue text-neonBlue font-orbitron font-bold tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue text-sm sm:text-base"
-            >
-              RULE BOOK
-            </a>
+            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-5 sm:p-6 backdrop-blur-md relative overflow-hidden shadow-[0_0_15px_rgba(239,68,68,0.15)] group hover:border-red-500/50 transition-colors duration-300">
+              <div className="absolute top-0 left-0 w-1 h-full bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
+              <h3 className="text-red-400 font-orbitron font-bold text-lg sm:text-xl mb-3 flex items-center gap-3 tracking-widest">
+                <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse shadow-[0_0_8px_rgba(239,68,68,1)]" />
+                REGISTRATION CLOSED
+              </h3>
+              <p className="text-white/80 font-orbitron text-sm leading-relaxed mb-6">
+                Thank you for the overwhelming response! HackSprint 6.0 is now full. You can still participate in other exciting events happening on the same dates at our college.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://nexovate-rouge-one.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-neonBlue/10 border border-neonBlue text-neonBlue hover:bg-neonBlue hover:text-white font-orbitron text-xs sm:text-sm font-bold tracking-wider rounded transition-all duration-300 glow-blue hover:scale-[1.02]"
+                >
+                  EXPLORE MORE EVENTS 
+                  <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </a>
+                <a 
+                  href="https://drive.google.com/drive/folders/19cNjU_vME0jLjCXxGqyae3dWaPCpbAd6?usp=sharing" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3 bg-transparent border border-white/20 text-white/70 hover:bg-white/10 hover:text-white font-orbitron text-xs sm:text-sm font-bold tracking-wider rounded transition-all duration-300 hover:scale-[1.02]"
+                >
+                  RULE BOOK
+                </a>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
 

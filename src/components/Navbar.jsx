@@ -92,15 +92,11 @@ const Navbar = () => {
 
 
           </div>
-          <a 
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfFqr-ZQb8Ib2t7UvzclOBZCleTzV43jqR3EcDFq9u46SpSHw/viewform"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-3 sm:px-6 py-1.5 sm:py-2 bg-transparent border border-neonBlue text-neonBlue font-orbitron text-xs sm:text-sm tracking-widest rounded-sm hover:bg-neonBlue hover:text-white transition-all duration-300 glow-blue overflow-hidden relative group block whitespace-nowrap"
+          <div 
+            className="px-3 sm:px-6 py-1.5 sm:py-2 bg-transparent border border-red-500 text-red-500 font-orbitron text-xs sm:text-sm tracking-widest rounded-sm cursor-not-allowed block whitespace-nowrap"
           >
-            <span className="relative z-10">REGISTER</span>
-            <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-          </a>
+            <span className="relative z-10">REGISTRATION CLOSED</span>
+          </div>
         </div>
       </div>
     </motion.nav>
